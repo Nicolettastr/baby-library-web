@@ -78,15 +78,16 @@ figure {
 }
 
 .menu {
-    width: 100%;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    place-content: center;
 }
 
 .nav-item {
     width: 80%;
     max-width: 180px;
-    min-width: 110px;
+    min-width: 130px;
     height: 68%;
     display: grid;
     place-content: center;
@@ -146,4 +147,68 @@ ul {
     height: 1250px;
     position: relative;
     background: var(--blueSky);
+}
+
+.downSection-cloud {
+    width: 80px;
+    height: 85px;
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+    top: 80px;
+    left: 224px;
+}
+
+.downSection-cloud::before {
+    content: " ";
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+    top: -8px;
+    left: 40px;
+}
+
+.downSection-cloud::after {
+    content: " ";
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+    top: -8px;
+    right: 58px;
+}
+
+.upSection-cloud {
+    width: 60px;
+    height: 65px;
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+    top: 35px;
+    left: 224px;
+}
+
+.upSection-cloud::before {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+    top: 18px;
+    right: 44px;
+}
+
+.upSection-cloud::after {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+    top: 14px;
+    left: 46px;
 }
