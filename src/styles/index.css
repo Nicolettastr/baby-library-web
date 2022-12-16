@@ -51,6 +51,8 @@ figure {
     --paragraphLetters: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*HEADER*/
+
 .main-nav {
     width: 100%;
     height: fit-content;
@@ -112,6 +114,8 @@ ul {
     color: var(--letters);
 }
 
+/*WELCOME SECTION*/
+
 .intro-img-container {
     width: 100%;
     height: fit-content;
@@ -149,66 +153,293 @@ ul {
     background: var(--blueSky);
 }
 
+.info-section h2 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: var(--tittleLetter);
+}
+
+/*General cloud classes*/
+
+.place {
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+}
+
+.place::before {
+    content: " ";
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+}
+
+.place::after {
+    content: " ";
+    border-radius: 100%;
+    background: var(--letters);
+    position: absolute;
+}
+
 .downSection-cloud {
     width: 80px;
     height: 85px;
-    border-radius: 100%;
-    background: var(--letters);
-    position: absolute;
-    top: 80px;
-    left: 224px;
 }
 
 .downSection-cloud::before {
-    content: " ";
     width: 90px;
     height: 90px;
-    border-radius: 100%;
-    background: var(--letters);
-    position: absolute;
-    top: -8px;
-    left: 40px;
 }
 
 .downSection-cloud::after {
-    content: " ";
     width: 90px;
     height: 90px;
-    border-radius: 100%;
-    background: var(--letters);
-    position: absolute;
-    top: -8px;
-    right: 58px;
 }
 
 .upSection-cloud {
     width: 60px;
     height: 65px;
-    border-radius: 100%;
-    background: var(--letters);
-    position: absolute;
-    top: 35px;
-    left: 224px;
 }
 
 .upSection-cloud::before {
-    content: " ";
     width: 50px;
     height: 50px;
-    border-radius: 100%;
-    background: var(--letters);
-    position: absolute;
+}
+
+.upSection-cloud::after {
+    width: 50px;
+    height: 50px;
+}
+
+/*especific classes*/
+
+/*First Cloud*/
+.first-bigUp {
+    top: 80px;
+    left: 110px;
+}
+
+.first-bigUp::before {
+    top: -8px;
+    left: 40px;
+}
+
+.first-bigUp::after {
+    top: -8px;
+    right: 58px;
+}
+
+.first-bigDown {
+    top: 35px;
+    left: 110px;
+}
+
+.first-bigDown::before {
     top: 18px;
     right: 44px;
 }
 
-.upSection-cloud::after {
-    content: " ";
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background: var(--letters);
-    position: absolute;
+.first-bigDown::after {
     top: 14px;
     left: 46px;
 }
+ /*Secon cloud*/
+
+ .first-bigUpTwo {
+    top: 465px;
+    left: 242px;
+}
+
+.first-bigUpTwo::before {
+    top: -8px;
+    left: 40px;
+}
+
+.first-bigUpTwo::after {
+    top: -8px;
+    right: 58px;
+}
+
+.first-bigDownTwo {
+    top: 424px;
+    left: 242px;
+}
+
+.first-bigDownTwo::before {
+    top: 18px;
+    right: 44px;
+}
+
+.first-bigDownTwo::after {
+    top: 14px;
+    left: 46px;
+}
+
+/*Little cloud*/
+
+.littlecloud {
+    width: 50px;
+    height: 50px;
+}
+
+.littlecloud::before {
+    width: 30px;
+    height: 30px;
+}
+
+.littlecloud::after {
+    width: 30px;
+    height: 30px;
+}
+
+.little {
+    top: 300px;
+    left: 30px;
+}
+
+.little::before {
+    top: 20px;
+    left: -14px;
+}
+
+.little::after {
+    top: 20px;
+    right: -14px;
+}
+
+.little-Two {
+    top: 350px;
+    right: 25px;
+}
+
+.little-Two::before {
+    top: 20px;
+    left: -14px;
+}
+
+.little-Two::after {
+    top: 20px;
+    right: -14px;
+}
+
+.little-three {
+    top: 0px;
+    left: 290px;
+}
+
+.little-three::before {
+    top: 20px;
+    left: -12px;
+}
+
+.little-three::after {
+    top: 20px;
+    right: -12px;
+}
+
+
+/*Sun image*/
+
+.sun {
+    width: 70%;
+    height: fit-content;
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    transition: all 0.1s;
+}
+
+.sun img {
+    width: 100%;
+    height: 100%;
+}
+
+.sunMove {
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cloudAnimation {
+    position: absolute;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.fourth-cloud {
+    animation-name: movingCloud;
+    animation-duration: 30s;
+}
+
+.second-cloud {
+    animation-name: movingCloudTwo;
+    animation-duration: 25s;
+} 
+
+.fifth-cloud {
+    animation-name: movingCloudThree;
+    animation-duration: 10s;
+} 
+
+@keyframes moving {
+    0% {
+        left: -5px;
+    }
+
+    50% {
+        left: 110px;
+    }
+
+    100% {
+        left: -5px;
+    }
+}
+
+@keyframes movingCloud {
+    0% {
+        right: 0px;
+    }
+
+    50% {
+        right: 110px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes movingCloudTwo {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 150px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes movingCloudThree {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: -150px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+
+
+
+
+

@@ -1,9 +1,20 @@
 import React from "react";
-import koala from "../../img/personajes/koala.png";
+
+//COMPONENTS
 import Navbar from "./navbar.jsx";
-import dataNav from "../dataNav.json";
 import IntroImage from "./introImage.jsx";
 import BigCloud from "./bigCloud.jsx";
+import Sun from "./sun.jsx";
+
+//IMAGES
+import koala from "../../img/personajes/koala.png";
+import sol from "../../img/personajes/sol.png"
+
+//JSON files
+import dataCloud from "../dataCloud.json"
+import dataNav from "../dataNav.json";
+import dataLittleCloud from "../dataLittleCloud.json"
+import LittleCloud from "./littleCloud.jsx";
 
 //create your first component
 const Home = () => {
@@ -18,7 +29,9 @@ const Home = () => {
 		</section>
 		<section className="info-section">
 			<h2>Aprende y juega</h2>
-      <BigCloud/>
+      <Sun sun={sol}/>
+      <BigCloud class="place" dataCloud={dataCloud}/>
+      <LittleCloud class="place" dataLittleCloud={dataLittleCloud}/>
 		</section>
 	  </main>
     </>
