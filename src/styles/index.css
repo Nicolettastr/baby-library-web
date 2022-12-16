@@ -1,12 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-/* 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 62.5%;
+    font-family: var(--documentLetter);
+}
 
-*/
+main {
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+}
+
+:root {
+    --darkBlue: #68a9c7;
+    --headerBackground: #fed403;
+    --letters: #f7f7f7;
+    --buttonHover: #061922;
+    --flowerPurple: #9561ac;
+    --blueSky:#b6e6fd;
+    --flowerPink: #6ebc37;
+    --borderColor: #8e6028;
+    --grassGreen: #7ec406;
+    --sunRed: #ef5553;
+    --backgroundButtons: #fcff82;
+    --bacgroundHover:#fca12c;
+    --iconsSize: 2.5rem;
+    --generalLetterSize: 1.6rem;
+    --tittleLetter: 2rem;
+    --infoLetterSixe: 1.3rem;
+    --cardTitle: 1rem; 
+    --documentLetter: 'Luckiest Guy', cursive;
+    --paragraphLetters: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-nav {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--headerBackground);
+}
+
+.nav-figure {
+    width: 30%;
+    height: fit-content;
+    margin: 8px;
+    border-radius: 50%;
+    background: #fcff82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-figure img {
+    width: 90%;
+    height: 90%;
+}
+
+.menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-item {
+    width: 80%;
+    max-width: 180px;
+    min-width: 110px;
+    height: 68%;
+    display: grid;
+    place-content: center;
+    margin: 5px 10px;
+    background: #e8630a;
+    border-radius: 15px;
+}
+
+.ul-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+}
+
+.nav-item a {
+    font-size: var(--infoLetterSixe);
+    color: var(--letters);
+}
+
+.intro-img-container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.intro-figure {
+    width: 100%;
+    height: fit-content;
+    border-top: #8b4507 6px solid;
+    border-bottom: #8b4507 6px solid;
+}
+
+.intro-figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.intro-welcome {
+    width: 46%;
+    height: fit-content;
+    position: absolute;
+    top: 30%;
+    left: 28%;
+}
+
+.intro-welcome img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-section {
+    height: 1250px;
+    position: relative;
+    background: var(--blueSky);
+}
