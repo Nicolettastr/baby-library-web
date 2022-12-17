@@ -5,6 +5,8 @@ import Navbar from "./navbar.jsx";
 import IntroImage from "./introImage.jsx";
 import BigCloud from "./bigCloud.jsx";
 import Sun from "./sun.jsx";
+import Info from "./info.jsx";
+import LittleCloud from "./littleCloud.jsx";
 
 //IMAGES
 import koala from "../../img/personajes/koala.png";
@@ -14,7 +16,8 @@ import sol from "../../img/personajes/sol.png"
 import dataCloud from "../dataCloud.json"
 import dataNav from "../dataNav.json";
 import dataLittleCloud from "../dataLittleCloud.json"
-import LittleCloud from "./littleCloud.jsx";
+import dataInfo from "../dataInfo.json"
+import MediumCloud from "./mediumCloud.jsx";
 
 //create your first component
 const Home = () => {
@@ -31,7 +34,9 @@ const Home = () => {
 			<h2>Aprende y juega</h2>
       <Sun sun={sol}/>
       <BigCloud class="place" dataCloud={dataCloud}/>
+      <MediumCloud/>
       <LittleCloud class="place" dataLittleCloud={dataLittleCloud}/>
+      <Info dataInfo={dataInfo}/>
 		</section>
 	  </main>
     </>

@@ -12,5 +12,20 @@
     {
         "section": "fifth-cloud",
         "classOne": "little-three"
+    },
+
+    {   
+        "section": "second-cloud",
+        "classOne": "little-four"
+    },
+
+    {
+        "section": "fourth-cloud",
+        "classOne": "little-five"
+    },
+    
+    {
+        "section": "fifth-cloud",
+        "classOne": "little-six"
     }
 ]
