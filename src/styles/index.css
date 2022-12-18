@@ -38,11 +38,11 @@ figure {
     --flowerPurple: #9561ac;
     --blueSky:#b6e6fd;
     --flowerPink: #6ebc37;
-    --borderColor: #8e6028;
+    --borderColor: #8b4507;
     --grassGreen: #7ec406;
     --sunRed: #ef5553;
     --backgroundButtons: #fcff82;
-    --bacgroundHover:#fca12c;
+    --bacgroundHover:#e8630a;
     --iconsSize: 2.5rem;
     --generalLetterSize: 1rem;
     --tittleLetter: 2rem;
@@ -95,7 +95,7 @@ figure {
     display: grid;
     place-content: center;
     margin: 5px 10px;
-    background: #e8630a;
+    background: var(--bacgroundHover);
     border-radius: 15px;
 }
 
@@ -126,8 +126,8 @@ ul {
 .intro-figure {
     width: 100%;
     height: fit-content;
-    border-top: #8b4507 6px solid;
-    border-bottom: #8b4507 6px solid;
+    border-top: var(--borderColor) 6px solid;
+    border-bottom: var(--borderColor) 6px solid;
 }
 
 .intro-figure img {
@@ -690,6 +690,21 @@ ul {
     font-size: 150%;
 }
 
+.btnOne {
+    top: 47%;
+    left: 10%;
+}
+
+.btnTwo {
+    margin-top: 16%;
+    margin-left: 60%;
+}
+
+.btnThree {
+    top: 24%;
+    left: 60%;
+}
+
 @keyframes rotate {
     0% {
         transform: scale(1);
@@ -703,6 +718,45 @@ ul {
         transform: scale(1);
     }
 }
+
+/*FOOTER*/
+
+
+.footer-section {
+    width: 100vw;
+    height: fit-content;
+    background: #9c5518;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-footer-section {
+    width: 90%;
+    margin: 20px;
+}
+
+.info-footer-section p {
+    margin: 10px 5px 0px 5px;
+    text-align: center;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px 0px;
+}
+
+.content-footer-detail {
+    border-right: 1px solid black;
+}
+
+.legal {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 @media (max-width: 359px) {
     .info-section {
@@ -754,20 +808,6 @@ ul {
         height: 80px;
     }
 
-    .btnOne {
-        top: 38%;
-        left: 12%;
-    }
-    
-    .btnTwo {
-        margin-top: 15%;
-        margin-left: 58%;
-    }
-    
-    .btnThree {
-        top: 20%;
-        left: 58%;
-    }
 }
 
 @media (min-width: 360px) {
@@ -800,20 +840,10 @@ ul {
         height: 100px;
     }
 
-    .btnOne {
-        top: 44%;
-        left: 10%;
-    }
-    
-    .btnTwo {
-        margin-top: 15%;
-        margin-left: 55%;
-    }
-    
     .btnThree {
-        top: 20%;
-        left: 56%;
+        top: 21%;
     }
+
 }
 
 @media (min-width: 500px) {

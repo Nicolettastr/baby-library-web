@@ -9,12 +9,19 @@ import Info from "./info.jsx";
 import LittleCloud from "./littleCloud.jsx";
 import MediumCloud from "./mediumCloud.jsx";
 import FarmImages from "./farmImages.jsx";
+import Footer from "./footer.jsx"
 
 //IMAGES
 import koala from "../../img/personajes/koala.png";
 import sol from "../../img/personajes/sol.png";
 import vaca from "../../img/personajes/vaca2.png";
-import girasolBtn from "../../img/personajes/girasolBtn.png";
+import caballito from "../../img/personajes/caballito.png";
+import cerdito from "../../img/personajes/cerdito.png";
+import conejo from "../../img/personajes/conejo.png";
+import farm from "../../img/personajes/farm.png";
+import gallo from "../../img/personajes/gallo.png";
+import paja from "../../img/personajes/paja.png";
+import sunflowerFence from "../../img/personajes/sunflowerFence.png";
 
 //JSON files
 import dataCloud from "../dataCloud.json"
@@ -44,8 +51,13 @@ const Home = () => {
       <Info dataInfo={dataInfo}/>
 		</section>
     <section className="lets-go-section">
-      <FarmImages dataFarm={dataFarm} vaca={vaca} girasolBtn={girasolBtn} boton={dataBoton}/>
+      <FarmImages dataFarm={dataFarm} vaca={vaca} boton={dataBoton}/>
     </section>
+
+
+    <footer className="footer-section">
+        <Footer/>
+    </footer>
 	  </main>
     </>
   );
