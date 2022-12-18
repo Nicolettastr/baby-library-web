@@ -23,6 +23,7 @@ main {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 figure {
@@ -148,7 +149,6 @@ ul {
 }
 
 .info-section {
-    height: 1500px;
     position: relative;
     background: var(--blueSky);
 }
@@ -293,8 +293,8 @@ ul {
  /*Secon cloud*/
 
  .first-bigUpTwo {
-    top: 465px;
-    left: 242px;
+    top: 477px;
+    left: 177px;
 }
 
 .first-bigUpTwo::before {
@@ -308,8 +308,8 @@ ul {
 }
 
 .first-bigDownTwo {
-    top: 424px;
-    left: 242px;
+    top: 434px;
+    left: 177px;
 }
 
 .first-bigDownTwo::before {
@@ -462,7 +462,7 @@ ul {
 
 .fourth-cloud {
     animation-name: movingCloud;
-    animation-duration: 30s;
+    animation-duration: 15s;
 }
 
 .second-cloud {
@@ -477,29 +477,29 @@ ul {
 
 @keyframes moving {
     0% {
-        left: -5px;
+        left: 0%;
     }
 
     50% {
-        left: 110px;
+        left: 30%;
     }
 
     100% {
-        left: -5px;
+        left: 0%;
     }
 }
 
 @keyframes movingCloud {
     0% {
-        right: 0px;
+        right: 0%;
     }
 
     50% {
-        right: 110px;
+        right: 70%;
     }
 
     100% {
-        right: 0px;
+        right: 0%;
     }
 }
 
@@ -519,15 +519,15 @@ ul {
 
 @keyframes movingCloudThree {
     0% {
-        left: 0px;
+        left: -30%;
     }
 
     50% {
-        left: -150px;
+        left: -70%;
     }
 
     100% {
-        left: 0px;
+        left: -30%;
     }
 }
 
@@ -552,29 +552,315 @@ ul {
     opacity: 0.9;
     margin: auto;
     padding: 10px;
+    left: 50%;
+    margin-left: -35%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -80px, rgba(0, 0, 0, 0.3) 0px 30px 60px -70px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.readingParagraph {
-    top: 585px;
-    left: 50%;
-    margin-left: -35%;
+
+.information-paragraph {
+    line-height: 150%;
+    padding: 5px 10px;
 }
 
-.videoParagraph {
-    top: 845px;
-    left: 50%;
-    margin-left: -35%;
+.tittle-paragraph {
+    font-size: 1.2rem;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.gameParagraph {
-    top: 1060px;
+.lets-go-section {
+    background: #cbf078;
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+}
+
+.farm-container {
+    position: absolute;
+    width: 50%;
+    height: fit-content;
     left: 50%;
-    margin-left: -35%;
+    margin-left: -25%;
+    margin-top: -37%;
+    z-index: 2;
+}
+
+.farm-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.fence {
+    position: absolute;
+    width: 100vw;
+    height: 15%;
+}
+
+.fence img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -20%;
+}
+
+.paja {
+    width:30%;
+    position: absolute;
+    z-index: 3;
+    margin-left: 60%;
+    margin-top: -8%;
+}
+
+.paja img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conejo {
+    width: 16%;
+}
+
+.conejo img {
+    width: 100%;
+    height: 100%;
+    margin-left: 15%;
+    transform: rotateY(180deg);
 }
 
 
+.caballito {
+    width: 50%;
+}
 
+.caballito img {
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.gallo img {
+    width: 100%;
+    height: 100%;
+    margin-top: -410%;
+    margin-left: 270%;
+}
+
+.gallo {
+    width: 25%;
+}
+
+.cerdito img {
+    width: 100%;
+    height: 100%;
+    margin-left: 130%;
+    margin-top: -20%;
+}
+
+.cerdito {
+    width: 40%;
+}
+
+.vaca {
+    width: 60%;
+}
+
+.vaca img {
+    width: 100%;
+    margin-left: -5%;
+}
+
+.btns {
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -80px, rgba(0, 0, 0, 0.3) 0px 30px 60px -70px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.btns a {
+    font-size: 150%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 359px) {
+    .info-section {
+        height: 2050px;
+    }
+
+    .readingParagraph {
+        top: 26%;
+    }
+    
+    .videoParagraph {
+        top: 46%;
+    }
+    
+    .gameParagraph {
+        top: 62%;
+    }
+
+    .first-bigDownTwo {
+        left: 157px;
+    }
+
+    .first-bigUpTwo {
+        left: 157px;
+    }
+
+    .little-six {
+        top: 1700px;
+    }
+
+    .farm-container {
+        margin-top: -29%;
+    }
+    
+    .fence {
+        height: 14%;
+    }
+    
+    .paja {
+        margin-top: -2%;
+    }
+    
+    .conejo img {
+        margin-top: 38%;
+    }
+
+    .btns {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btnOne {
+        top: 38%;
+        left: 12%;
+    }
+    
+    .btnTwo {
+        margin-top: 15%;
+        margin-left: 58%;
+    }
+    
+    .btnThree {
+        top: 20%;
+        left: 58%;
+    }
+}
+
+@media (min-width: 360px) {
+    .info-section {
+        height: 1800px;
+    }
+
+    .readingParagraph {
+        top: 32%;
+    }
+    
+    .videoParagraph {
+        top: 51%;
+    }
+    
+    .gameParagraph {
+        top: 68%;
+    }
+
+    .first-bigDownTwo {
+        left: 157px;
+    }
+
+    .first-bigUpTwo {
+        left: 157px;
+    }
+
+    .btns {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btnOne {
+        top: 44%;
+        left: 10%;
+    }
+    
+    .btnTwo {
+        margin-top: 15%;
+        margin-left: 55%;
+    }
+    
+    .btnThree {
+        top: 20%;
+        left: 56%;
+    }
+}
+
+@media (min-width: 500px) {
+    .info-section {
+        height: 1800px;
+    }
+
+    .readingParagraph {
+        top: 36%;
+    }
+    
+    .videoParagraph {
+        top: 55%;
+    }
+    
+    .gameParagraph {
+        top: 72%;
+    }
+
+    .first-bigDownTwo {
+        left: 157px;
+    }
+
+    .first-bigUpTwo {
+        left: 157px;
+    }
+
+    .btns {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btnOne {
+        top: 48%;
+        left: 15%;
+    }
+    
+    .btnTwo {
+        margin-top: 15%;
+        margin-left: 60%;
+    }
+    
+    .btnThree {
+        top: 22%;
+        left: 60%;
+    }
+}
 
 
 

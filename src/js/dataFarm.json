@@ -1,0 +1,37 @@
+[
+    {
+        "name": "farm-container",
+        "img": "farm.png"
+    },
+
+    {
+        "name": "fence",
+        "img": "sunflowerFence.png"
+    },
+
+    {
+        "name": "paja",
+        "img": "paja.png"
+    },
+
+    {
+        "name": "conejo",
+        "img": "conejo.png"
+    },
+
+    {
+        "name": "caballito",
+        "img": "caballito.png"
+    },
+
+    {
+        "name": "gallo",
+        "img": "gallo.png"
+    },
+
+    {
+        "name": "cerdito",
+        "img": "cerdito.png"
+    }
+]
+
