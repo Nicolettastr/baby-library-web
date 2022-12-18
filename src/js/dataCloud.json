@@ -1,0 +1,13 @@
+[
+    {
+        "section": "first-cloud",
+        "classOne": "first-bigDown",
+        "classTwo": "first-bigUp"
+    },
+
+    {
+        "section": "third-cloud",
+        "classOne": "first-bigDownTwo",
+        "classTwo": "first-bigUpTwo"
+    }
+]

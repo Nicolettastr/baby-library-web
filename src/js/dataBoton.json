@@ -1,0 +1,16 @@
+[
+    {
+        "name": "btnOne",
+        "go": "JUGAR!"
+    },
+
+    {
+        "name": "btnTwo",
+        "go": "LEER!"
+    },
+
+    {
+        "name": "btnThree",
+        "go": "ESCUCHAR!"
+    }
+]
